@@ -6,8 +6,8 @@ test('Player Card renders without crashing!', () => {
 	render(<PlayerCard />);
 });
 
-// test('testing for players name', () => {
-// 	const { getByText } = render(<PlayerCard />);
+test('testing for players name', () => {
+	const { getByText } = render(<PlayerCard />);
 
-// 	getByText(/country/i);
-// });
+	getByText(/country/i);
+});

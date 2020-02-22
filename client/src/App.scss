@@ -178,7 +178,8 @@ img {
 .players-card {
 	display: flex;
 	flex-direction: column;
-	background-color: #016363;
+	background-color: #72daec;
+	color: #3d3e41;
 	height: 10vh;
 	width: 40%;
 	padding: 2%;
@@ -218,5 +219,6 @@ img {
 
 	.players-card {
 		background-color: #4a85fc;
+		color: #fff;
 	}
 }

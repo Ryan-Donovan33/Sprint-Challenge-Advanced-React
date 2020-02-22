@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { number } from 'prop-types';
 
 class PlayerCard extends Component {
 	constructor(props) {
@@ -14,10 +15,10 @@ class PlayerCard extends Component {
 				{this.props.players.map((player) => {
 					return (
 						<div className="players-card">
-							<h1>{player.name}</h1>
-							<h4>Country: {player.country}</h4>
-							<h4>Searches: {player.searches}</h4>
-							<p>ID: {player.id}</p>
+							<h1 key={player.toString()}>{player.name}</h1>
+							<h4 key={player.toString()}>Country: {player.country}</h4>
+							<h4 key={player.toString()}>Searches: {player.searches}</h4>
+							<p key={player.toString()}>ID: {player.id}</p>
 						</div>
 					);
 				})}
