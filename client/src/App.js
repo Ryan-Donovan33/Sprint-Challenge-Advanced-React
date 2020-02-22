@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import PlayerCard from './components/PlayerCard';
+import PlayerNav from './components/PlayersNav';
+
 import './App.scss';
 
 class App extends Component {
@@ -23,6 +25,7 @@ class App extends Component {
 		console.log(this.state.playerData);
 		return (
 			<div className="App">
+				<PlayerNav />
 				<PlayerCard players={this.state.playerData} />
 			</div>
 		);
