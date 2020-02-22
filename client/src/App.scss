@@ -167,6 +167,14 @@ img {
 	width: 100%;
 }
 
+.world-cup {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2%;
+	padding: 2%;
+}
+
 .players-card {
 	display: flex;
 	flex-direction: column;

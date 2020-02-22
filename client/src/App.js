@@ -13,7 +13,7 @@ class App extends Component {
 			playerData: []
 		};
 	}
-
+	// accessing the data by calling axios and finding the available access points below.
 	componentDidMount() {
 		axios('http://localhost:5000/api/players')
 			.then((player) => this.setState({ playerData: player.data }))
