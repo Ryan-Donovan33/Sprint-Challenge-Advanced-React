@@ -12,10 +12,10 @@ class PlayerCard extends Component {
 			<div>
 				{this.props.players.map((player) => {
 					return (
-						<div>
-							<p>{player.name}</p>
-							<p>Country: {player.country}</p>
-							<p>Searches: {player.searches}</p>
+						<div className="players-card">
+							<h1>{player.name}</h1>
+							<h4>Country: {player.country}</h4>
+							<h4>Searches: {player.searches}</h4>
 						</div>
 					);
 				})}

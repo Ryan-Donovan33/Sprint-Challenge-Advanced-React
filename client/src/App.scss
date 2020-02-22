@@ -167,6 +167,15 @@ img {
 	width: 100%;
 }
 
+.players-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #016363;
+	height: 10vh;
+	width: 40%;
+	padding: 2%;
+}
+
 .dark-mode__toggle {
 	background: #016363;
 	border-radius: 50px;
