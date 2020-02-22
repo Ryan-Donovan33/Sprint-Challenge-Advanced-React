@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import { number } from 'prop-types';
 
 class PlayerCard extends Component {
 	constructor(props) {
