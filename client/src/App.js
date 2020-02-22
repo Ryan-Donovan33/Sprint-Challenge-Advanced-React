@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './App.css';
+
+import PlayerCard from './components/PlayerCard';
+import './App.scss';
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			playerData: {},
-			playerTrends: []
+			playerData: []
 		};
 	}
 
@@ -19,7 +20,12 @@ class App extends Component {
 	}
 
 	render() {
-		return <div className="App" />;
+		console.log(this.state.playerData);
+		return (
+			<div className="App">
+				<PlayerCard players={this.state.playerData} />
+			</div>
+		);
 	}
 }
 
