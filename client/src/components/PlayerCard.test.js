@@ -11,3 +11,9 @@ test('testing for players name', () => {
 
 	getByText(/country/i);
 });
+
+test('testing for players name', () => {
+	const { getByText } = render(<PlayerCard />);
+
+	getByText(/name/i);
+});
